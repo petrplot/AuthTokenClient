@@ -1,0 +1,23 @@
+.modal{
+    height: 100vh;
+    width: 100vw;
+    background: rgba(0,0,0 ,0.4);
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0);
+}
+
+.active{
+    transform: scale(1);
+}
+
+.content{
+    height: 200px;
+    width: 400px;
+    padding: 20px;
+    background: #fff;
+}

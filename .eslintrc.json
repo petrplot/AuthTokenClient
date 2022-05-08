@@ -1,0 +1,52 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [
+        
+        "eslint:recommended", 
+        "plugin:react/jsx-runtime",
+        "google",
+        "plugin:import/recommended",
+        "plugin:import/typescript",
+        "plugin:import/errors",
+        "plugin:import/warnings"
+        
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react",
+        "@typescript-eslint",
+        "import"
+    ],
+    "rules": {
+        "semi": ["error", "always"],
+        "quotes": ["error", "double"],
+        "require-jsdoc":"off",
+        "max-len": ["error", { "code": 100 }],
+        "import/no-unresolved": [1, {"commonjs": true, "amd": true}],
+        "import/named": 1,
+        "import/namespace": 1,
+        "import/default": 1,
+        "import/export": 1,
+        "no-unused-vars":"off"
+    },
+    "ignorePatterns": [
+        "src/**/*.test.ts",
+        "src/reportWebVitals.ts",
+        "src/react-app-env.d.ts",
+        "node_modules",
+        "config", 
+        "scripts",
+        "public",
+        "build"
+        ]
+}
